@@ -93,7 +93,7 @@ func syncStore(wd string, branchName string, targetPath string) {
 	var distPath = path.Join(wd, targetPath)
 
 	if _, err := os.Lstat(distPath); err == nil {
-		if err := os.Remove(distPath); err != nil {
+		if err := os.RemoveAll(distPath); err != nil {
 			log.Fatal(err)
 		}
 	}
