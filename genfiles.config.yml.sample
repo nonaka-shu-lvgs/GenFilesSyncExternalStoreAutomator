@@ -1,0 +1,5 @@
+dirs:
+  ./gen_domain: // 管理したいディレクトリを指定する
+    when_empty: yarn generate // ディレクトリ内が空の時に実行するコマンドを書く
+  ./generated:
+  ./generated_dep:
