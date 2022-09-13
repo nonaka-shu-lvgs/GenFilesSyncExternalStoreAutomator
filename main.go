@@ -12,7 +12,7 @@ import (
 )
 
 const dirname = ".genfiles"
-const configFileName = "genfiles.config.yml.sample"
+const configFileName = "genfiles.config.yml"
 
 type Config struct {
 	Dirs map[string]map[string]string
